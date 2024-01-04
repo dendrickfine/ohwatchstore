@@ -107,8 +107,9 @@
             @yield('content')
         </main>
         <footer class="text-center mt-4">
-            <p>Copyright &copy; {{ date('Y') }} Timeline Company Ltd.</p>
+             <p>Copyright &copy; {{ date('Y') }} Timeline Company Ltd. for <a href="https://www.itenas.ac.id/" target="_blank">Itenas</a></p>
         </footer>
+
     </div>
 </body>
 
