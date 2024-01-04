@@ -42,9 +42,8 @@ var swiper = new Swiper('.banner', {
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">{{ __('AVAILABLE PRODUCTS') }}</div>
-
                     <div class="card-group m-auto">
-                        @foreach ($products as $product)
+                        @foreach ($products->sortByDesc('created_at') as $product)
                             <div class="card m-3" style="width: 18rem;">
                                 <img class="card-img-top" src="{{ url('storage/' . $product->image) }}"
                                     alt="Card image cap">
